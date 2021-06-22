@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "[How to create a Professional README](./readme-guide.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Timson",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/while-alive/Professional-README-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/while-alive/Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/while-alive/Professional-README-Generator#readme"
+}
