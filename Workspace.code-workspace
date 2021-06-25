@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Weekly-Modules/07.Portfolio-Generator"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"editor.background": "#d4d4d407",
+			"terminal.background": "#eef7ff",
+			"minimap.background": "#ffffff2f",
+		}
+	}
+}
