@@ -140,7 +140,7 @@ const promptUser = async () => {
 const writeToFile = data => {
     let markdown = generateReadme(data);
     return new Promise((resolve, reject) => {
-        fs.writeFile('./dist/readme.md', markdown, err => {
+        fs.writeFile('./dist/README.md', markdown, err => {
             if (err) {
                 reject(err);
                 return;
