@@ -4,6 +4,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateReadme = require('./utils/generateMarkdown.js');
+const FormData = require('form-data')
 
 // Figure out how to allow the user to select pictures 
 // from the asset/images folder and use them as a preview
@@ -31,7 +32,7 @@ const prompts = [
     {
         type: "input",
         name: "installation",
-        message: "What are the steps required to install your project: ",
+        message: "What are the steps required to install your project: )",
         default: '',
     },
     {
@@ -60,33 +61,6 @@ const prompts = [
         // does it work like that???
         // choices: ['MIT', 'ISC', 'Apache'],
     },
-    // {
-    //     type: "input",
-    //     name: "badges",
-    //     message: "",
-    //     default: "",
-    //     // choices: "",
-    //     // validate: "",
-    //     // when: ""
-    // },
-    // {
-    //     type: "input",
-    //     name: "features",
-    //     message: "",
-    //     default: "",
-    //     // choices: "",
-    //     // validate: "",
-    //     // when: ""
-    // },
-    // {
-    //     type: "input",
-    //     name: "contributors",
-    //     message: "",
-    //     default: "",
-    //     // choices: "",
-    //     // validate: "",
-    //     // when: ""
-    // },
     {
         type: "input",
         name: "github",
@@ -137,8 +111,9 @@ const promptUser = async () => {
 
 // include a ToC if (sections > 2) or something 
 // TODO: Create a function to write README file
-const writeToFile = data => {
-    let markdown = generateReadme(data);
+const writeToFile = async data => {
+    const markdown = await generateReadme(data);
+    console.log("in writeToFile")
     return new Promise((resolve, reject) => {
         fs.writeFile('./dist/README.md', markdown, err => {
             if (err) {

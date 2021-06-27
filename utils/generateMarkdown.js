@@ -4,6 +4,7 @@
 
 // EITHER I WILL INPORT FS HERE OR I CAN DO IT FROM INDEX - Choose clean code
 const fs = require('fs');
+const fetch = require("node-fetch");
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -11,7 +12,7 @@ function renderBadges(username, repo, license) {
   let ret = ""
   ret += `
 ![Analysis](https://img.shields.io/github/languages/top/${username}/${repo})`
-  if (license){
+  if (license) {
     ret += `
 ![License](https://img.shields.io/github/license/${username}/${repo})
   `
@@ -19,42 +20,37 @@ function renderBadges(username, repo, license) {
   return ret
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  return `
-https://img.shields.io/github/license/${githubUsername}/${githubRepo}
-  `
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license) {
-    return `
-    ${renderLicenseLink}
-  `
-  } else { return [] }
+const generateLicenseSection = async (github, repo) => {
+  let ret = ""
+  await fetch("https://api.github.com/repos/" + github + "/" + repo)
+    .then(async response => {
+      if (response.ok) {
+        await response.json()
+          .then(async data => {
+            ret += await data.license.name
+          });
+      };
+    });
+    return ret;
 }
 
 // TODO: Create a function to generate markdown for README
-const generateMarkdown = data => {
+const generateMarkdown = async data => {
   console.log("GENERATE MARKDOWN!")
   console.log(data)
 
   let addSections = "";
 
+  // TITLE
   if (data.title) { //it's required!!
-    addSections += `
-# ${data.title}
+    addSections += `# ${data.title}
 `
   }
 
-  // add badges to top of readme
-  addSections += `
-${renderBadges(data.github, data.repo, data.license)}`
+  // REPO BADGES
+  addSections += `${renderBadges(data.github, data.repo, data.license)}`
 
-
+  // DESCRIPTION
   if (data.description) {
     addSections += `
 ## Description
@@ -65,6 +61,7 @@ ${data.description}
   // TABLE OF CONTENTS
   addSections += tableOContents(data)
 
+  // INSTALLATION
   if (data.installation) {
     addSections += `
 ## Installation
@@ -72,6 +69,7 @@ ${data.installation}
 `
   }
 
+  // USAGE
   if (data.usage) {
     addSections += `
 ## Usage
@@ -79,14 +77,17 @@ ${data.usage}
 `
   }
 
+  // LICENSE
   if (data.license) { // get into render license
+
     addSections += `
 ## License
-This application is covered under
-${renderLicenseLink}
+This application is covered under the ${await generateLicenseSection(data.github, data.repo)} 
 `
+    console.log(await generateLicenseSection(data.github, data.repo))
   }
 
+  // CONTRIBUTING
   if (data.contributing) {
     addSections += `
 ## Contributing
@@ -94,6 +95,7 @@ ${data.contributing}
 `
   }
 
+  // TESTS
   if (data.tests) {
     addSections += `
 ## Tests
@@ -101,13 +103,13 @@ ${data.tests}
 `
   }
 
+  // QUESTIONS
   if (data.github && data.title) { //github is required
     addSections += `
 ## Questions
-https://github.com/${data.github}/${data.repo}
+https://github.com/${data.github}
 `
   }
-
   if (data.email) {
     addSections += `
 If there are any additional questions send me an email! 
@@ -115,6 +117,7 @@ If there are any additional questions send me an email!
 ${data.email}
 `
   }
+  console.log(addSections)
   return addSections
 };
 
@@ -126,7 +129,6 @@ function tableOContents(data) {
   ret += `
 ## Table of Contents`
   while (content[i][0] != 'github') {
-    console.log(content[i][0])
     let header = content[i][0].charAt(0).toUpperCase() + content[i][0].slice(1);
     ret += `
 * [${header}](#${content[i][0]})`
