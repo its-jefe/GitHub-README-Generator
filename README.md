@@ -1,9 +1,8 @@
 # GitHub README Generator
-
 ## Description
-Based on [How to create a Professional README](https://github.com/coding-boot-camp/potential-enigma/blob/main/readme-guide.md) from [Xandromus](https://github.com/Xandromus)
+Starter code from [How to create a Professional README](https://github.com/coding-boot-camp/potential-enigma/blob/main/readme-guide.md) by [Xandromus](https://github.com/Xandromus). 
 
-This node.js application began using only the inquirer package as a means to prompt the user for information on their projects. It has become a vessel for learning and now implements multiple node packages and the github API. 
+This node.js application began using only the inquirer package as a means to prompt the user for information on their projects to generate a README. It has become an even greater vessel for learning and now implements multiple node packages and the github API.
 
 * inquirer: command line user-prompts
 * node-fetch: allow fetch for github api
@@ -12,6 +11,7 @@ This node.js application began using only the inquirer package as a means to pro
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Future](#future)
 ***
 ## Installation
 
@@ -32,4 +32,6 @@ A readme file is generated in the distribution folder.
 ***
 ## Future 
 
-- I would like to break down the intsallation, usage, and contributing prompts into steps. 
+- I would like to break down the intsallation, usage, and contributing prompts into steps.
+
+- Likely will add more badges.
