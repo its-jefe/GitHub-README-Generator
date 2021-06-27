@@ -11,7 +11,6 @@ Loosely based on [How to create a Professional README](https://github.com/coding
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
 * [Questions](#questions)
 
 ## Installation + Dependencies
@@ -25,8 +24,3 @@ Loosely based on [How to create a Professional README](https://github.com/coding
 3. 
 
 ## Usage
-
-## Questions
-If there are any questions, concerns, or feedback... 
-Email me at 
-https://github.com/while-alive

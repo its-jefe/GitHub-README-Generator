@@ -47,6 +47,13 @@ const generateMarkdown = async data => {
 `
   }
 
+  // REPO LINK
+  if (data.github && data.title) { //github is required
+    addSections += `
+https://github.com/${data.github}
+`
+  }
+  
   // REPO BADGES
   addSections += `${renderBadges(data.github, data.repo, data.license)}`
 
@@ -102,16 +109,10 @@ ${data.contributing}
 ${data.tests}
 `
   }
-
   // QUESTIONS
-  if (data.github && data.title) { //github is required
-    addSections += `
-## Questions
-https://github.com/${data.github}
-`
-  }
   if (data.email) {
     addSections += `
+## Questions
 If there are any additional questions send me an email! 
 
 ${data.email}

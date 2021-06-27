@@ -1,6 +1,4 @@
-// TODO : // TRY NOT TO PASS THE WHOLE RESPONSE 
-
-// TODO: Include packages needed for this application
+// Included packages
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateReadme = require('./utils/generateMarkdown.js');
@@ -56,10 +54,9 @@ const prompts = [
     {
         type: "confirm",
         name: "license",
-        message: "Does your GitHub apppliation have a license? *ReadMe Generator will find it", // Wanted as a badge at the top "
+        message: "Does your GitHub apppliation have a license? (ReadMe Generator will find it)", // Wanted as a badge at the top "
         default: false,
-        // does it work like that???
-        // choices: ['MIT', 'ISC', 'Apache'],
+        // choices: ['MIT', 'ISC', 'Apache'], // possibly
     },
     {
         type: "input",
@@ -95,6 +92,7 @@ const prompts = [
         default: '',
     },
 ]
+
 const promptUser = async () => {
     let dataObject = {};
     for (let i = 0; i < prompts.length; i++) {
@@ -110,7 +108,6 @@ const promptUser = async () => {
 };
 
 // include a ToC if (sections > 2) or something 
-// TODO: Create a function to write README file
 const writeToFile = async data => {
     const markdown = await generateReadme(data);
     console.log("in writeToFile")
@@ -128,11 +125,12 @@ const writeToFile = async data => {
     });
 }
 
-// TODO: Create a function to initialize app
+// initialize app
 const init = () => {
     return promptUser();
 }
 
+// if write to file fails
 const failureCallback = (err) => {
     console.log(`Error : ${err}`);
 }
