@@ -46,6 +46,14 @@ https://youtu.be/5GRvfMNTn4g
 ## Future 
 
 - I would like to break down the intsallation, usage, and contributing prompts into steps.
+> Until then I recommend using a backslash '\\' after numbers or bullets to stop the auto formatting of lists
+
+> ex: <br>
+>"1\\. This is item one" <br> 
+> <i> will appear <br>
+> 1\. This is item one <br>
+> <i>instead of <br>
+> 1. this is item one (All scrunched in)
 
 - Add a form for uploading photos and test files. (Testing form-data package)
 

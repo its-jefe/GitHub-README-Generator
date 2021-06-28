@@ -16,10 +16,10 @@ This application uses command line prompts to generate a readme.md
 * [Questions](#questions)
 
 ## Installation
-1. Download the file from the github repo &nbsp;<br> 2. Unzip the files
+1\. Download the file from the github repo <br> 2. Unzip the files
 
 ## Usage
-1. Make sure you are in the directory and use 'npm install' to install dependencies. &nbsp;<br> 2. Run 'index.js' &nbsp;<br> 3. Answer the prompts &nbsp;<br> Note: If you leave out a prompt.. that section will be left out
+1\. Make sure you are in the directory and use 'npm install' to install dependencies. <br> 2. Run 'index.js' <br> 3. Answer the prompts <br> Note: If you leave out a prompt.. that section will be left out
 
 ## License
 This application is covered under the GNU General Public License v3.0 
