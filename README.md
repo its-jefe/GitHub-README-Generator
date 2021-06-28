@@ -38,6 +38,16 @@ Project starter code from [How to create a Professional README](https://github.c
 
 3. Voila! A readme file is generated in the distribution folder. 
 
+Note: Use backslashes after numbers or bullets in lists to avoid auto formatting.
+This below video shows complications of not using backslashes but the README.md from the dist folder shows proper formatting. 
+
+> ex: <br>
+>"1\\. This is item one" <br> 
+> <i> will appear <br>
+> 1\. This is item one <br>
+> <i>instead of <br>
+> 1. this is item one (All scrunched in)
+
 <b>Installation and Usage Demo Video:</b>
 https://youtu.be/5GRvfMNTn4g
 
@@ -47,13 +57,6 @@ https://youtu.be/5GRvfMNTn4g
 
 - I would like to break down the intsallation, usage, and contributing prompts into steps.
 > Until then I recommend using a backslash '\\' after numbers or bullets to stop the auto formatting of lists
-
-> ex: <br>
->"1\\. This is item one" <br> 
-> <i> will appear <br>
-> 1\. This is item one <br>
-> <i>instead of <br>
-> 1. this is item one (All scrunched in)
 
 - Add a form for uploading photos and test files. (Testing form-data package)
 
