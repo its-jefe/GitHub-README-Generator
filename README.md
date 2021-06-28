@@ -32,9 +32,11 @@ Project starter code from [How to create a Professional README](https://github.c
 1. Run "node index.js" to begin using the application.
 
 2. You will be taken through a series of prompts...
-answer them in as much detail as possible and voila! 
+    * Answer them in as much detail as possible.
+    * If a section does not apply to you, leave it blank <br>
+    and the generator will not include that section
 
-A readme file is generated in the distribution folder. 
+3. Voila! A readme file is generated in the distribution folder. 
 
 <b>Installation and Usage Demo Video:</b>
 https://youtu.be/5GRvfMNTn4g
