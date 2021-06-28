@@ -10,7 +10,7 @@ const prompts = [
     {
         type: "input",
         name: "title",
-        message: "Enter the title of your project: ",
+        message: "Enter the title of your project.",
         default: '',
         validate: nameInput => {
             if (nameInput) {
@@ -30,13 +30,13 @@ const prompts = [
     {
         type: "input",
         name: "installation",
-        message: "What are the steps required to install your project: ",
+        message: "What are the steps required to install your project.",
         default: '',
     },
     {
         type: "input",
         name: "usage",
-        message: "Provide instructions and examples for use. ADD LINK TO SCREENSHOT?", // add a screenshot
+        message: "Provide instructions and examples for use.", // add campability for uploading a screenshot
         default: '',
     },
     {
@@ -48,20 +48,19 @@ const prompts = [
     {
         type: "input",
         name: "tests",
-        message: "Link test files.", //Go the extra mile and write tests for your application. Then provide examples on how to run them.
-        default: '',
+        message: "Link test files.", // Go the extra mile and write tests for your application. Then provide examples on how to run them.
+        default: '', // ofc add file upload capabilities 
     },
     {
         type: "confirm",
         name: "license",
-        message: "Does your GitHub apppliation have a license? (ReadMe Generator will find it)", // Wanted as a badge at the top "
+        message: "Does your GitHub apppliation have a license? (ReadMe Generator will find it)",
         default: false,
-        // choices: ['MIT', 'ISC', 'Apache'], // possibly
     },
     {
         type: "input",
         name: "github",
-        message: "Enter your GitHub username: ",
+        message: "Enter your GitHub username.",
         validate: githubInput => {
             if (githubInput) {
                 return true;
@@ -74,7 +73,7 @@ const prompts = [
     {
         type: "input",
         name: "repo",
-        message: "Enter your GitHub repo name: ",
+        message: "Enter your GitHub repo name.",
         default: '',
         validate: repoInput => {
             if (repoInput) {
@@ -88,7 +87,7 @@ const prompts = [
     {
         type: "input",
         name: "email",
-        message: "Enter your email: ",
+        message: "Enter your email.",
         default: '',
     },
 ]
