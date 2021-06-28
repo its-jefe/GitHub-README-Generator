@@ -34,4 +34,7 @@ A readme file is generated in the distribution folder.
 
 - I would like to break down the intsallation, usage, and contributing prompts into steps.
 
+- Would also like to add a form of user uploading for photos and test files.
+    - Testing form-data package
+
 - Likely will add more badges.

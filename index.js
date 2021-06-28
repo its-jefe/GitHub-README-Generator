@@ -30,7 +30,7 @@ const prompts = [
     {
         type: "input",
         name: "installation",
-        message: "What are the steps required to install your project: )",
+        message: "What are the steps required to install your project: ",
         default: '',
     },
     {
