@@ -1,32 +1,33 @@
-# 1
+# GitHub README Generator
 
-https://github.com/while-alive
+https://github.com/its-jefe
 
-![Analysis](https://img.shields.io/github/languages/top/while-alive/mars-report)
-![License](https://img.shields.io/github/license/while-alive/mars-report)
+![Analysis](https://img.shields.io/github/languages/top/its-jefe/github-readme-generator)
+![License](https://img.shields.io/github/license/its-jefe/github-readme-generator)
   
 ## Description
-2
+This application uses command line prompts to generate a readme.md
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
 * [Tests](#tests)
 * [License](#license)
 * [Questions](#questions)
 
 ## Installation
-3
+1. Download the file from the github repo &nbsp;<br> 2. Unzip the files
 
 ## Usage
-4
+1. Make sure you are in the directory and use 'npm install' to install dependencies. &nbsp;<br> 2. Run 'index.js' &nbsp;<br> 3. Answer the prompts &nbsp;<br> Note: If you leave out a prompt.. that section will be left out
 
 ## License
-This application is covered under the MIT License 
-
-## Contributing
-5
+This application is covered under the GNU General Public License v3.0 
 
 ## Tests
-6
+No test files at this time but am working on it
+
+## Questions
+If there are any additional questions send me an email! 
+
+jeff.timson@yahoo.com
