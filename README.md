@@ -9,14 +9,7 @@ Project starter code from [How to create a Professional README](https://github.c
 
 Met the following criteria: 
 
-![Criteria](./assets/outline.pdf)
-
-<object data="./assets/outline.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="./assets/outline.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-
+<img src="./assets/criteria.png" alt="criteria" width="400"/>
 
 <b>Dependencies:</b>
 
