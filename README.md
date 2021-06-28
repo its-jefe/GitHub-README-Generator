@@ -39,7 +39,6 @@ Project starter code from [How to create a Professional README](https://github.c
 3. Voila! A readme file is generated in the distribution folder. 
 
 Note: Use backslashes after numbers or bullets in lists to avoid auto formatting.
-This below video shows complications of not using backslashes but the README.md from the dist folder shows proper formatting. 
 
 > ex: <br>
 >"1\\. This is item one" <br> 
@@ -48,6 +47,8 @@ This below video shows complications of not using backslashes but the README.md 
 > <i>instead of <br>
 > 1. this is item one (All scrunched in)
 
+The demo video shows complications of not using backslashes but the README.md from the dist folder shows proper formatting. 
+   
 <b>Installation and Usage Demo Video:</b>
 https://youtu.be/5GRvfMNTn4g
 
