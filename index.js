@@ -2,10 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateReadme = require('./utils/generateMarkdown.js');
-const FormData = require('form-data')
+// const FormData = require('form-data')
 
-// Figure out how to allow the user to select pictures 
-// from the asset/images folder and use them as a preview
 const prompts = [
     {
         type: "input",
