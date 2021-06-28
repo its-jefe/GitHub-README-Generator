@@ -7,6 +7,17 @@ This is a strictly command-line node.js application for quickly generating READM
 
 Project starter code from [How to create a Professional README](https://github.com/coding-boot-camp/potential-enigma/blob/main/readme-guide.md) by [Xandromus](https://github.com/Xandromus). 
 
+Met the following criteria: 
+
+![Criteria](./assets/outline.pdf)
+
+<object data="./assets/outline.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="./assets/outline.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+
 <b>Dependencies:</b>
 
 * inquirer: command line user-prompts
