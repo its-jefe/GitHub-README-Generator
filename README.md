@@ -9,7 +9,7 @@ Project starter code from [How to create a Professional README](https://github.c
 
 Met the following criteria: 
 
-<img src="./assets/criteria.png" alt="criteria" width="400"/>
+<img src="./assets/criteria.png" alt="criteria" width="30vw"/>
 
 <b>Dependencies:</b>
 
