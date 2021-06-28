@@ -67,11 +67,11 @@ https://youtu.be/5GRvfMNTn4g
 ## Contribute
 If you come across any issues or have any ideas you would like to share...
 
-Leave a comment and maybe I'll get around to it.
+> Leave a comment and maybe I'll get around to it.
 
-OR
+> OR
 
-Feel free to do it yourself and make a pull request. 
+> Feel free to do it yourself and make a pull request. 
 
 
 ![🦦](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/232/otter_1f9a6.png)
