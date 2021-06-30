@@ -46,12 +46,12 @@ Note: Use backslashes after numbers or bullets in lists to avoid auto formatting
 
 > ex: <br>
 >"1\\. This is item one" <br> 
-> <i> will appear <br>
+> <i> will appear </i> <br>
 > 1\. This is item one <br>
-> <i>instead of <br>
+> <i>instead of </i> <br>
 > 1. this is item one (All scrunched in)
 
-The demo video shows complications of not using backslashes but the README.md from the dist folder shows proper formatting. 
+Also note: The demo video shows complications of not using backslashes but the README.md from the dist folder shows proper formatting. 
    
 <b>Installation and Usage Demo Video:</b>
 https://youtu.be/5GRvfMNTn4g
