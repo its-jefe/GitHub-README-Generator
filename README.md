@@ -51,7 +51,7 @@ Note: Use backslashes after numbers or bullets in lists to avoid auto formatting
 > <i>instead of </i> <br>
 > 1. this is item one (All scrunched in)
 
-Also note: The demo video shows complications of not using backslashes but the README.md from the dist folder shows proper formatting. 
+Also note: The demo video shows complications of not using backslashes but the [README.md](https://github.com/its-jefe/GitHub-README-Generator/tree/main/dist) from the dist folder shows proper formatting. 
    
 <b>Installation and Usage Demo Video:</b>
 https://youtu.be/5GRvfMNTn4g
