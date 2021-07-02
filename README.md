@@ -42,7 +42,7 @@ Met the following criteria:
 
 3. Voila! A readme file is generated in the distribution folder. 
 
-Note: Use backslashes after numbers or bullets in lists to avoid auto formatting.
+Note: Use backslashes after numbers in lists to avoid auto formatting.
 
 > ex: <br>
 >"1\\. This is item one" <br> 
