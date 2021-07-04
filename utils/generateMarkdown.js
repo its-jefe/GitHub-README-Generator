@@ -2,8 +2,6 @@
 // or just have data be an object and access license via data.license
 // although I should learn deconstructuring
 
-// EITHER I WILL INPORT FS HERE OR I CAN DO IT FROM INDEX - Choose clean code
-const fs = require('fs');
 const fetch = require("node-fetch");
 
 // TODO: Create a function that returns a license badge based on which license is passed in
